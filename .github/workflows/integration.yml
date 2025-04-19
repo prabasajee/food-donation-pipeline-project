@@ -1,4 +1,3 @@
-
 name: integration
 
 on:
@@ -6,46 +5,26 @@ on:
     branches: [ "main" ]
 
 jobs:
-  build:
-
+  test-on-node:
     runs-on: ubuntu-latest
-
     strategy:
       matrix:
         node-version: [18.x, 20.x, 22.x]
-       
 
     steps:
-    - uses: actions/checkout@v4
-    - name: Use Node.js ${{ matrix.node-version }}
-      uses: actions/setup-node@v4
-      with:
-        node-version: ${{ matrix.node-version }}
-        cache: 'npm'
-    - name: "instalating dependency"
-    - run: npm i
+      - uses: actions/checkout@v4
 
-    - name: "run tests"
-    - run: npm build
+      - name: Use Node.js ${{ matrix.node-version }}
+        uses: actions/setup-node@v4
+        with:
+          node-version: ${{ matrix.node-version }}
+          cache: 'npm'
 
-  build:
+      - name: Install dependencies
+        run: npm install
 
-    runs-on: ubuntu-latest
+      - name: Build the app
+        run: npm run build
 
-    strategy:
-      matrix:
-        node-version: [18.x, 20.x, 22.x]
-       
-
-    steps:
-    - uses: actions/checkout@v4
-    - name: Use Node.js ${{ matrix.node-version }}
-      uses: actions/setup-node@v4
-      with:
-        node-version: ${{ matrix.node-version }}
-        cache: 'npm'
-    - name: "instalating dependency"
-    - run: npm i
-    
-    - name: "running  test cases"
-    - run: npm run test
+      - name: Run tests
+        run: npm run test
