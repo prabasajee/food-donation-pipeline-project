@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Available Donations - FoodShare</title>
+  <link rel="stylesheet" type="text/css" href="/NGO/css/donation.css" />
+</head>
+<body>
+
+<header>
+  <h1>🍽️ Available Food Donations</h1>
+  <p>Filter and reserve food donations</p>
+</header>
+
+<div class="container">
+
+  <div class="filters">
+    <input type="text" id="filterArea" placeholder="Search by area">
+    <input type="date" id="filterDate">
+    <select id="filterType">
+      <option value="">All Food Types</option>
+      <option value="Rice">Rice</option>
+      <option value="Sandwiches">Sandwiches</option>
+      <option value="Pizza">Pizza</option>
+    </select>
+  </div>
+
+  <!-- Loading spinner -->
+  <div class="spinner" id="spinner">
+    <img src="https://i.gifer.com/ZZ5H.gif" alt="Loading...">
+  </div>
+
+  <div id="donationsList">
+    <!-- Donation cards injected by JS -->
+  </div>
+
+  <div class="no-donations" id="noDonationsMessage"></div>
+
+</div>
+
+  <script src="/NGO/js/donation.js"></script>
+
+
+</body>
+</html>
