@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NGO Home - FoodShare</title>
+  <link rel="stylesheet" type="text/css" href="/NGO/css/post.css">
+</head>
+<body>
+
+    <header>
+      <h1>FoodShare - Connecting Donors with NGOs</h1>
+      <p>Reduce food waste and fight hunger</p>
+    </header>
+  
+    <nav>
+        <a href="/NGO/html/home.html">Home</a>
+        <a href="/NGO/html/available donation.html">Available Donations</a>
+        <a href="history.html">Donation History</a>
+        <a href="/NGO/html/profile.html">My Profile</a>
+      </nav>
+  
+    <div class="donation-form">
+      <h2>Post Food Donation</h2>
+      <form id="donationForm">
+        <label for="foodType">Food Type</label>
+        <input type="text" id="foodType" name="foodType" required placeholder="e.g. Rice, Sandwiches">
+  
+        <label for="quantity">Quantity</label>
+        <input type="number" id="quantity" name="quantity" required placeholder="e.g. 10 packs" min="1">
+  
+        <label for="location">Location</label>
+        <input type="text" id="location" name="location" required placeholder="e.g. 123 Main Street">
+  
+        <label for="expiry">Expiry Time (Optional)</label>
+        <input type="datetime-local" id="expiry" name="expiry">
+  
+        <label for="additionalInfo">Additional Info (Optional)</label>
+        <textarea id="additionalInfo" name="additionalInfo" rows="3" placeholder="e.g. Vegetarian food, Needs to be picked up by 5 PM"></textarea>
+  
+        <button type="submit">Post Donation</button>
+      </form>
+  
+      <div class="footer">
+        <p>Need help? <a href="#">Contact Support</a></p>
+      </div>
+    </div>
+    <script src="/NGO/js/rs-donation.js"></script>
+  
+  
+  </body>
+
+</html>
