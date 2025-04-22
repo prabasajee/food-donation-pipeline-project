@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>User Registration - FoodShare</title>
+  <link rel="stylesheet" type="text/css" href="/login/css/regiter.css">
+</head>
+<body>
+
+<div class="container">
+  <h2>User Registration</h2>
+
+  <div class="tab-buttons">
+    <button class="active" onclick="switchForm('restaurant')">Restaurant</button>
+    <button onclick="switchForm('ngo')">NGO</button>
+  </div>
+
+  <!-- Restaurant Form -->
+  <form id="restaurant-form">
+    <div class="form-group">
+      <label for="restaurant-name">Restaurant Name</label>
+      <input type="text" id="restaurant-name" placeholder="Enter your restaurant name" required>
+    </div>
+    <div class="form-group">
+      <label for="restaurant-email">Email</label>
+      <input type="email" id="restaurant-email" placeholder="Enter your email" required>
+    </div>
+    <div class="form-group">
+      <label for="restaurant-password">Password</label>
+      <input type="password" id="restaurant-password" placeholder="Enter your password" required>
+    </div>
+    <input type="hidden" value="restaurant" name="role">
+    <button class="submit-btn" type="submit">Register as Restaurant</button>
+  </form>
+
+  <!-- NGO Form -->
+  <form id="ngo-form" style="display:none;">
+    <div class="form-group">
+      <label for="ngo-name">NGO Name</label>
+      <input type="text" id="ngo-name" placeholder="Enter your NGO name" required>
+    </div>
+    <div class="form-group">
+      <label for="ngo-email">Email</label>
+      <input type="email" id="ngo-email" placeholder="Enter your email" required>
+    </div>
+    <div class="form-group">
+      <label for="ngo-password">Password</label>
+      <input type="password" id="ngo-password" placeholder="Enter your password" required>
+    </div>
+    <input type="hidden" value="ngo" name="role">
+    <button class="submit-btn" type="submit">Register as NGO</button>
+  </form>
+
+  <div class="note">
+    📧 A verification link will be sent to your email after registration.
+  </div>
+  <div class="note">
+    Already have an account? <a href="login.html">Login here</a>.
+</div>
+</div>
+
+<script src="/login/js/regiter_js.js"></script>
+
+</body>
+</html>
