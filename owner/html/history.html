@@ -5,42 +5,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Donation History</title>
   <link rel="stylesheet" href="/owner/css/index.css" />
-  <style>
-    .history-container {
-      max-width: 800px;
-      margin: 80px auto;
-      padding: 20px;
-      background-color: white;
-      border-radius: 10px;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-    }
-
-    .donation-entry {
-      border-bottom: 1px solid #ccc;
-      padding: 10px 0;
-    }
-
-    .donation-entry:last-child {
-      border-bottom: none;
-    }
-
-    .donation-entry h3 {
-      margin: 0;
-      color: #27ae60;
-    }
-
-    .donation-entry p {
-      margin: 4px 0;
-    }
-  </style>
+  <link rel="stylesheet" href="/owner/css/history.css" />
 </head>
 <body>
-
   <header>
     <h1>FoodShare - Connecting Donors with NGOs</h1>
     <p>Reduce food waste and fight hunger</p>
   </header>
-
   <nav>
     <a href="index.html">Home</a>
     <a href="restaurant-donate.html">Donate Food</a>
@@ -66,27 +37,7 @@
     <p><a href="Contact Us.html">Contact Us</a> | <a href="terms.html">Terms & Conditions</a></p>
   </footer>
 
-  <script>
-    const historyContainer = document.getElementById("donationHistory");
-    const donations = JSON.parse(localStorage.getItem("donations")) || [];
 
-    if (donations.length === 0) {
-      historyContainer.innerHTML = "<p>No donations posted yet.</p>";
-    } else {
-      donations.reverse().forEach((donation, index) => {
-        const entry = document.createElement("div");
-        entry.className = "donation-entry";
-        entry.innerHTML = `
-          <h3>Donation #${donations.length - index}</h3>
-          <p><strong>Food Type:</strong> ${donation.foodType}</p>
-          <p><strong>Quantity:</strong> ${donation.quantity}</p>
-          <p><strong>Location:</strong> ${donation.location}</p>
-          <p><strong>Expiry:</strong> ${donation.expiry}</p>
-          <p><strong>Info:</strong> ${donation.additionalInfo}</p>
-        `;
-        historyContainer.appendChild(entry);
-      });
-    }
-  </script>
+   <script src="/owner/js/history.js"></script>
 </body>
 </html>
