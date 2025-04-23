@@ -1,114 +1,115 @@
 
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #f7f7f7;
-    margin: 0;
-    padding: 0;
-  }
-  
-  header {
-    background-color: #27ae60;
-    color: white;
-    padding: 20px;
-    text-align: center;
-  }
-  
-  header h1 {
-    margin: 0;
-    font-size: 36px;
-  }
-  
-  header p {
-    margin: 5px 0 20px;
-    font-size: 18px;
-  }
-  
-  nav {
-    background-color: #34495e;
-    display: flex;
-    justify-content: center;
-    padding: 10px;
-  }
-  
-  nav a {
-    color: white;
-    text-decoration: none;
-    margin: 0 15px;
-    font-size: 18px;
-  }
-  
-  nav a:hover {
-    text-decoration: underline;
-  }
-  
-  .donation-form {
-    background: white;
-    padding: 30px;
-    border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    width: 100%;
-    max-width: 600px;
-    margin: 50px auto;
-  }
-  
-  h2 {
-    text-align: center;
-    color: #2c3e50;
-    margin-bottom: 30px;
-  }
-  
-  label {
-    font-size: 16px;
-    color: #34495e;
-    margin-bottom: 8px;
-    display: block;
-  }
-  
-  input, select, textarea {
-    width: 100%;
-    padding: 12px;
-    margin-bottom: 20px;
-    border-radius: 6px;
-    border: 1px solid #ccc;
-    font-size: 16px;
-    color: #34495e;
-  }
-  
-  button {
-    width: 100%;
-    padding: 12px;
-    background-color: #27ae60;
-    color: white;
-    border: none;
-    border-radius: 6px;
-    font-size: 16px;
-    cursor: pointer;
-    transition: background-color 0.3s;
-  }
-  
-  button:hover {
-    background-color: #2ecc71;
-  }
-  
-  .footer {
-    text-align: center;
-    margin-top: 30px;
-  }
-  
-  .footer p {
-    font-size: 14px;
-  }
-  
-  .footer a {
-    color: #27ae60;
-    text-decoration: none;
-    font-weight: bold;
-  }
-  
-  .footer a:hover {
-    text-decoration: underline;
-  }
-  
-  
-  
-  
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f7f7f7;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #27ae60;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 36px;
+}
+
+header p {
+  margin: 5px 0 20px;
+  font-size: 18px;
+}
+
+nav {
+  background-color: #34495e;
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  padding: 10px 20px;
+  margin: 0 10px;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+nav a:hover {
+  background-color: #2ecc71;
+}
+
+.donation-form {
+  background: white;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 600px;
+  margin: 50px auto;
+}
+
+h2 {
+  text-align: center;
+  color: #2c3e50;
+  margin-bottom: 30px;
+}
+
+label {
+  font-size: 16px;
+  color: #34495e;
+  margin-bottom: 8px;
+  display: block;
+}
+
+input, select, textarea {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 20px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+  color: #34495e;
+}
+
+button {
+  width: 100%;
+  padding: 12px;
+  background-color: #27ae60;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #2ecc71;
+}
+
+.footer {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.footer p {
+  font-size: 14px;
+}
+
+.footer a {
+  color: #27ae60;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.footer a:hover {
+  text-decoration: underline;
+}
+
+
+
