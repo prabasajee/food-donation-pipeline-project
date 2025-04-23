@@ -1,0 +1,27 @@
+
+.history-container {
+  max-width: 800px;
+  margin: 80px auto;
+  padding: 20px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.donation-entry {
+  border-bottom: 1px solid #ccc;
+  padding: 10px 0;
+}
+
+.donation-entry:last-child {
+  border-bottom: none;
+}
+
+.donation-entry h3 {
+  margin: 0;
+  color: #27ae60;
+}
+
+.donation-entry p {
+  margin: 4px 0;
+}
