@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us</title>
+  <link rel="stylesheet" type="text/css" href="/owner/css/contact.css">
+</head>
+<body>
+
+  <header>
+    <h1>Contact Us</h1>
+  </header>
+
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="donations.html">Available Donations</a>
+    <a href="profile.html">My Profile</a>
+  </nav>
+
+  <div class="content">
+    <h2>We'd Love to Hear From You!</h2>
+    <p>If you have any questions or suggestions, feel free to reach out to us. Please fill out the form below, and we'll get back to you as soon as possible.</p>
+
+    <!-- Contact Form -->
+    <div class="contact-form">
+      <h3>Contact Form</h3>
+      <form action="submit_contact_form.php" method="POST">
+        <label for="name">Full Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Email Address:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="message">Your Message:</label>
+        <textarea id="message" name="message" rows="5" required></textarea>
+
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+
+    <!-- Contact Information -->
+    <div class="contact-info">
+      <h3>Contact Details</h3>
+      <p>Email: <a href="mailto:support@fooddonation.com">support@fooddonation.com</a></p>
+      <p>Phone: +94 0774557915</p>
+    </div>
+
+    <!-- Social Media Links -->
+    <div class="social-links">
+      <h3>Follow Us</h3>
+      <a href="https://facebook.com/fooddonation" target="_blank">Facebook</a>
+      <a href="https://twitter.com/fooddonation" target="_blank">Twitter</a>
+      <a href="https://instagram.com/fooddonation" target="_blank">Instagram</a>
+    </div>
+  </div>
+
+</body>
+</html>
