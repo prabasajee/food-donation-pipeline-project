@@ -8,7 +8,7 @@ function login() {
     } else if (email === "restaurant@example.com" && password === "restaurant1234") {
       // If Restaurant login successful
       localStorage.setItem("role", "restaurant");
-      window.location.href = "owner/html/index.html"; 
+      window.location.href = "../../owner/html/index.html"; 
     } else {
       alert("Invalid credentials. Please try again.");
     }
